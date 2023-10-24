@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:wght@100;200;300;400;600&display=swap');
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: black ;
     color: white;
+    font-family: 'Montserrat';
 }
 
 section{
@@ -25,24 +28,54 @@ section{
     width: 100%;
     height: 10%;
     display: flex;
-    justify-content: space-between;
+    gap: 0;
 }
 .inputfield input{
     height: 100%;
     width: 75vw;
     padding: 0;
     border: none;
+    font-size: 20px;
+    font-family: Montserrat;
 }
 
+::placeholder{
+    font-family: Montserrat;
+    padding: 20px;
+    opacity: 0.5;
+}
 .inputfield button{
     height: 100%;
-    padding: 3vw;
-    border: none;
+    width: calc(100% - 75vw);
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid rgb(32, 177, 32);
+    color: rgb(32, 177, 32);
     cursor: pointer;
+    transition: 0.3s;
+}
+.inputfield button:hover{
+    color: white;
+    background-color: rgb(32, 177, 32);
 }
  .content .list{
+    list-style-type: none;
     box-sizing: border-box;
     height: 85%;
     width: 100%;
     padding: 20px;
+ }
+ .list .selected{
+    text-decoration:line-through;
+ }
+ .list li{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+ }
+ .list input{
+    margin: 0;
  }
