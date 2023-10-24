@@ -1,7 +1,7 @@
 const inputEl = document.getElementById('input')
 const saveBtn = document.getElementById('save')
 let listEl = document.getElementById('list')
-
+const clearBtn = document.getElementById('clear')
 let i = 0;
 
 function save(){
@@ -38,3 +38,9 @@ function save(){
 
 
 saveBtn.addEventListener('click', save)
+clearBtn.addEventListener('click', () =>{
+    i = 0;
+    while (listEl.firstChild) {
+        listEl.removeChild(listEl.firstChild);
+    }
+})
