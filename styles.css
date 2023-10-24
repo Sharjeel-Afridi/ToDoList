@@ -17,6 +17,9 @@ section{
     height: 80vh;
     width: 90vw;
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .inputfield{
     width: 100%;
@@ -35,4 +38,11 @@ section{
     height: 100%;
     padding: 3vw;
     border: none;
+    cursor: pointer;
 }
+ .content .list{
+    box-sizing: border-box;
+    height: 85%;
+    width: 100%;
+    padding: 20px;
+ }
