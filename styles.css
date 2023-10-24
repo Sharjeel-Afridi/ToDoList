@@ -1,0 +1,38 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black ;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+}
+.content{
+    height: 80vh;
+    width: 90vw;
+    border: 1px solid white;
+}
+.inputfield{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.inputfield input{
+    height: 100%;
+    width: 75vw;
+    padding: 0;
+    border: none;
+}
+
+.inputfield button{
+    height: 100%;
+    padding: 3vw;
+    border: none;
+}
